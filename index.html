@@ -1,1 +1,108 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Modern Landing Page Example" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Landing Page</title>
+  <!-- Tailwind CSS via CDN (for prototyping) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.4/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <header class="border-b border-gray-200">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-4">
+      <div class="text-xl font-bold text-indigo-600">
+        MyBrand
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li><a href="#" class="hover:text-indigo-600">Features</a></li>
+        <li><a href="#" class="hover:text-indigo-600">Pricing</a></li>
+        <li><a href="#" class="hover:text-indigo-600">FAQ</a></li>
+        <li><a href="#" class="hover:text-indigo-600">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button (toggle with JS if you want) -->
+      <button
+        class="md:hidden px-4 py-2 border rounded text-gray-700 hover:bg-gray-100 focus:outline-none"
+      >
+        Menu
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container mx-auto flex flex-col md:flex-row items-center justify-between py-16 px-4">
+    <!-- Left Content -->
+    <div class="max-w-lg">
+      <h1 class="text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+        No more bloated boilerplates
+      </h1>
+      <p class="text-lg text-gray-600 mb-8">
+        The lean, high-performance starter kit that will have people asking 
+        <strong>how you built your project so fast</strong>.
+      </p>
+      <div class="flex space-x-4">
+        <a
+          href="#"
+          class="px-6 py-3 bg-indigo-600 text-white rounded-md font-semibold hover:bg-indigo-700 transition"
+        >
+          Get Started
+        </a>
+        <a
+          href="#"
+          class="px-6 py-3 bg-gray-200 text-gray-700 rounded-md font-semibold hover:bg-gray-300 transition"
+        >
+          Learn More
+        </a>
+      </div>
+      <!-- Example "user avatars" or testimonials row -->
+      <div class="flex items-center mt-6 space-x-2">
+        <img
+          class="w-10 h-10 rounded-full"
+          src="https://via.placeholder.com/40"
+          alt="User 1"
+        />
+        <img
+          class="w-10 h-10 rounded-full"
+          src="https://via.placeholder.com/40"
+          alt="User 2"
+        />
+        <img
+          class="w-10 h-10 rounded-full"
+          src="https://via.placeholder.com/40"
+          alt="User 3"
+        />
+        <span class="ml-2 text-sm text-gray-500">
+          Join over 50 founders
+        </span>
+      </div>
+    </div>
+
+    <!-- Right Content (YouTube Embed or Screenshot) -->
+    <div class="mt-8 md:mt-0 md:w-1/2">
+      <div class="relative w-full h-64 bg-gray-200 rounded-md overflow-hidden">
+        <!-- Replace VIDEO_ID with your own or use an image instead -->
+        <iframe
+          class="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-200 py-6">
+    <div class="container mx-auto px-4 text-center text-sm text-gray-500">
+      © 2025 MyBrand. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
